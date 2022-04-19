@@ -7,7 +7,6 @@
 : All libraries and prototypes to be used are in the "holberton.h" library, for this reason all files start with #include "holberton.h"
 .SH DESCRIPTION
 This function is designed to output according to a format as detailed below. This function writes its output to the standard output, the standard output stream.
- 
 .RI "[" OPTION "]..."
 To use _printf you have to use the following key characters preceeded by % symbol.
 .RS 3
@@ -23,8 +22,7 @@ To use _printf you have to use the following key characters preceeded by % symbo
 .RS 0
 %x: To print a number in hexadecimal  
 .RS 0
-%%: To print a porcentage symbol
-.SH EXIT STATUS or
+%%: To print a percentage symbol
 .SH RETURN VALUES
 The function will always return an integer, corresponding to the symbol, without counting the null string.
 .SH BUGS

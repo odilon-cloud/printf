@@ -1,5 +1,5 @@
 #include "main.h"
- 
+
 /**
  * parser - Receives the main string and all the necessary parameters to
  * print a formated string.
@@ -11,7 +11,7 @@
 int parser(const char *format, conver_t f_list[], va_list arg_list)
 {
 	int i, j, r_val, printed_chars;
- 
+
 	printed_chars = 0;
 	for (i = 0; format[i] != '\0'; i++)/* Iterates through the main str*/
 	{

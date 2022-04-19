@@ -1,5 +1,5 @@
 #include "main.h"
- 
+
 /**
  * print_reversed - Calls a function to reverse and print a string
  * @arg: Argument passed to the function
@@ -10,19 +10,20 @@ int print_reversed(va_list arg)
         int len;
         char *str;
         char *ptr;
- 
+
         str = va_arg(arg, char *);
         if (str == NULL)
                 return (-1);
         ptr = rev_string(str);
         if (ptr == NULL)
                 return (-1);
+
         for (len = 0; ptr[len] != '\0'; len++)
                 _write_char(ptr[len]);
         free(ptr);
         return (len);
 }
- 
+
 /**
  * rot13 - Converts string to rot13
  * @list: string to convert
@@ -35,7 +36,7 @@ int rot13(va_list list)
         char *str;
         char s[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
         char u[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
- 
+
         str = va_arg(list, char *);
         if (str == NULL)
                 return (-1);
